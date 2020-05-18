@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.washme.MainActivity"
+    android:background="@drawable/d">
+
+    <EditText
+        android:id="@+id/city_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:background="#1a2332"
+        android:ems="10"
+        android:hint="@string/city_hint"
+        android:inputType="textPersonName"
+        android:imeOptions="actionDone"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textAlignment="textEnd"
+        android:textColor="#fccf28"
+        android:textColorHint="#fccf28"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/city_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#1a2332"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="IsNeedWash"
+        android:padding="10dp"
+        android:text="@string/wash_or_not_wash"
+        android:textColor="#fccf28"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/history0"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/history1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#444444"
+        android:padding="10dp"
+        android:text="Последний запрос"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/history1"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/history2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#444444"
+        android:padding="10dp"
+        android:text="Последний запрос"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/history2"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/history3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#444444"
+        android:padding="10dp"
+        android:text="Последний запрос"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/history3"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/adView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="#444444"
+        android:padding="10dp"
+        android:text="Последний запрос"
+        android:textColor="#FFFFFF" />
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_banner_id">
+    </com.google.android.gms.ads.AdView>
+<!--ca-app-pub-2638691973154358/3495520866-->
+</RelativeLayout>

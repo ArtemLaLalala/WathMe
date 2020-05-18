@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Wash Me</string>
+    <string name="admob_id">ca-app-pub-2638691973154358~2318170561</string>
+    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="wash_or_not_wash">Мыть или не мыть?</string>
+    <string name="city_hint">ГОРОД</string>
+</resources>
